@@ -9,28 +9,28 @@ class Canbo
 
     def enter_infomation
         print "Nhập tên : "
-        @name = gets.chomp
+        @name225 = gets.chomp
         print "Nhập tuổi : "
-        @age = gets.to_i
+        @age225 = gets.to_i
         print "Nhập giới tính 1(nam) 0(nữ) 2(khác) : "
-        @gender = gets.to_i
+        @gender225 = gets.to_i
         print "Nhập địa chỉ : "
-        @address = gets.chomp
+        @address225 = gets.chomp
     end
 
     def info    
-        puts "Tên : #{@name}"
-        puts "Tuối : #{@age}"
-        if @gender == 1 
+        puts "Tên : #{@name225}"
+        puts "Tuối : #{@age225}"
+        if @gender225 == 1 
             puts'Giới tính : Nam'
-        elsif @gender == 0
+        elsif @gender225 == 0
             puts 'Giới Tính : Nữ'
         else 
             puts 'Giới Tính : Khác'
         end
-        puts "Địa chỉ : #{@address}"
+        puts "Địa chỉ : #{@address225}"
     end
-    attr_accessor :name, :age, :gender, :address
+    attr_accessor :name225, :age225, :gender225, :address225
 end 
 
 
@@ -40,17 +40,17 @@ class Congnhan < Canbo
     def initialize
     end
 
-    attr_accessor :name, :age, :gender, :address, :bac
+    attr_accessor :name225, :age225, :gender225, :address225, :bac225
 
     def enter_infomation
         super
         print "Nhập bậc : "
-        @bac = gets.chomp
+        @bac225 = gets.chomp
     end
 
     def info 
         super   
-        puts "Bậc : #{@bac}"
+        puts "Bậc : #{@bac225}"
     end
 
 end
@@ -63,13 +63,13 @@ class Kysu < Canbo
     def enter_infomation
         super
         print "Nhập ngành đào tạo : "
-        @nganh = gets.chomp
+        @nganh225 = gets.chomp
     end
     def info 
         super   
-        puts "Ngành : #{@nganh}"
+        puts "Ngành : #{@nganh225}"
     end
-    attr_accessor :name, :age, :gender, :address, :nganh
+    attr_accessor :name225, :age225, :gender225, :address225, :nganh225
 end
 
 class Nhanvien < Canbo
@@ -79,13 +79,13 @@ class Nhanvien < Canbo
     def enter_infomation
         super
         print "Nhập công việc : "
-        @congviec = gets.chomp
+        @congviec225 = gets.chomp
     end
     def info 
         super   
-        puts "Công việc : #{@congviec}"
+        puts "Công việc : #{@congviec225}"
     end
-    attr_accessor :name, :age, :gender, :address, :congviec
+    attr_accessor :name225, :age225, :gender225, :address225, :congviec225
 
 end
 
